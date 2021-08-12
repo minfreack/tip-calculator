@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+// ======== VARIABLES ======== //
+:root {
+  // ======== COLORS ======== //
+  --background-color: hsl(185, 41%, 84%);
+  --main-card-color: hsl(189, 41%, 97%);
+  --primary-color: hsl(183, 100%, 15%);
+  --primary-color-alt: hsl(172, 67%, 45%);
+  --secondary-color: hsl(184, 14%, 56%);
+  --teartiary-color: hsl(186, 14%, 43%);
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(0, 94%, 42%);
+
+
+  // ======== FONT ======== //
+  // SIZE//
+  --body-font: 'Space Mono', sans-serif;
+  --normal-font-size: 1.5rem;
+  --small--font-size: 1rem;
+  --smaller-font-size: 0.75rem;
+  // WEIGHT //
+  --font-normal: 400;
+  --font-bold: 700;
+
+  // ======= MARGIN ======== //
+  --mrg-0-25: .25rem;
+  --mrg-0-5: .5rem;
+  --mrg-0-75: .75rem;
+  --mrg-1: 1rem;
+  --mrg-1-5: 1.5rem;
+  --mrg-2: 2rem;
+  --mrg-2-5: 2.5rem;
+  --mrg-3: 3rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+      --big-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+  }
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--body-font);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--normal-font-size);
+  background-color: var(--background-color);
+}
+
+h1, h2 {
+  font-weight: var(--font-bold);
+}
+
+h3, h4 {
+  font-weight: var(--font-semi-bold);
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-size: var(--small--font-size);
+  color: var(--primary-color);
+}

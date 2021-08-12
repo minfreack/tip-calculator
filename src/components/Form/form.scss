@@ -1,0 +1,172 @@
+input::placeholder {
+  color: var(--secondary-color);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+//Firefox:
+input[type="number"] {
+-moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+-moz-appearance: number-input;
+}
+//Other
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.bill, .people {
+
+  .form-input {
+    margin: .25rem 0 1rem;
+    position: relative;
+  }
+
+  .validation-label {
+    display: none;
+  }
+
+
+  .error-label {
+    color: var(--red);
+    text-align: right;
+    padding-left: 1.5rem;
+  }
+
+  .error-input {
+    border: 1px solid var(--red) !important;
+  }
+
+  input {
+    width: 100%;
+    margin-top: var(--mrg-0-5);
+    padding: .5rem 2.5rem .5rem 2.5rem;
+    background-color: var(--main-card-color);
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+    text-align: right;
+  }
+
+  .input-icon {
+    position: absolute;
+    bottom: 1rem;
+    margin-left: var(--mrg-1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  input[type="number"]:focus{
+    border: 1px solid var(--primary-color-alt);
+  }
+}
+
+.percentage {
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: .4rem;
+    margin: .25rem 0 1rem;
+    position: relative;
+  }
+
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+  input[type="checkbox"] + label {
+    background-color: var(--primary-color);
+    outline: 0;
+    border: 0px;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    color: var(--white);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    transition: .25s;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked + label{
+    background-color: var(--primary-color-alt);
+    color: var(--primary-color);
+    transition: .25s;
+  }
+
+  input[type="checkbox"]:hover + label{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    transition: .25s;
+  }
+
+  input[type="number"] {
+    padding: .5rem 1rem;
+    background-color: var(--main-card-color);
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+  }
+
+  input[type="number"]:focus{
+    border: 1px solid var(--primary-color-alt);
+  }
+
+}
+
+@media (min-width: 359.9px) and (max-width: 1439.9px) {
+  .bill {
+    padding: .5rem;
+
+    label {
+      margin-left: 3rem;
+    }
+  }
+  .bill .form-input, .people .form-input {
+    margin-left: 2.5rem;
+  }
+
+  .bill input, .people input {
+    width: 90%;
+  }
+  .percentage {
+    margin: 0;
+    padding: 0;
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 40%);
+      position: relative;
+      justify-content: center;
+    }
+    label {
+      margin-left: 3rem;
+    }
+
+    .buttons label {
+      margin-left: 0;
+    }
+  }
+
+  .percentage input[type="checkbox"] + label{
+    padding: .5rem .5rem;
+  }
+
+  .people label {
+    margin-left: 3rem;
+  }
+}

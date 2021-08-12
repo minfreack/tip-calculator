@@ -1,0 +1,19 @@
+@import '../globals';
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  justify-self: center;
+}
+
+@media (min-width: 359.9px) and (max-width: 1439.9px) {
+  .logo {
+    margin: 2rem;
+  }
+}

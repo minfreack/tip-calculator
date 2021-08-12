@@ -1,0 +1,20 @@
+@import '../globals';
+
+.main {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  grid-gap: 1rem;
+  width: 100vh;
+}
+
+@media (min-width: 359.9px) and (max-width: 1439.9px) {
+  .main {
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 1rem 0;
+    padding: 0;
+  }
+}
