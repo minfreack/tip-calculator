@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import dollar from '../../images/icon-dollar.svg';
-import person from '../../images/icon-person.svg';
+import dollar from './../../images/icon-dollar.svg';
+import person from './../../images/icon-person.svg';
 import PropTypes from 'prop-types';
 import './form.scss';
 
@@ -11,7 +11,6 @@ export const Form = ({amount, setAmount, setTotal, bill, setBill, persons, setPe
     };
 
     const handlePersons = (e) => {
-        console.log(e.target.value);
         if(e.target.value == ''){
             document.querySelector('#validation-label').classList.replace('validation-label', 'error-label');
             document.querySelector('#persons').classList.add('error-input');
